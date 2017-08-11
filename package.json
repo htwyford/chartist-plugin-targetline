@@ -1,6 +1,6 @@
 {
   "name": "chartist-plugin-targetline",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Target line plugin for Chartist.js charting library",
   "main": "chartist-plugin-targetline.js",
   "scripts": {
