@@ -1,27 +1,18 @@
-# Point Labels plugin for Chartist.js
+# Target Line plugin for Chartist.js
 
-This is a simple plugin for Chartist.js that will put a label on top of data points on line charts. This plugin serves
-as an example plugin package and can be used as starting point to create your own awesome Chartist.js plugin.
-
-Please visit http://gionkunz.github.io/chartist-js/plugins.html for more information.
+A plugin for Chartist.js that allows the drawing of a target line on a chart.
 
 ## Download 
-The easiest way to get started, using Bower
-```
-bower install chartist-plugin-pointlabels --save
-```
+Grab the source or download from npm:
+
+`npm install chartist-plugin-targetline`
 
 ## Available options and their defaults
 
 ```javascript
 var defaultOptions = {
-  labelClass: 'ct-label',
-  labelOffset: {
-    x: 0,
-    y: -10
-  },
-  textAnchor: 'middle',
-  labelInterpolationFnc: Chartist.noop
+  value = null,
+  class = 'ct-target-line'
 };
 ```
 
@@ -36,10 +27,18 @@ var chart = new Chartist.Line('.ct-chart', {
   ]
 }, {
   plugins: [
-    ctPointLabels({
-      textAnchor: 'middle',
-      labelInterpolationFnc: function(value) {return '$' + value.toFixed(2)}
+    ctTargetLine({
+      value: 1000
     })
   ]
 });
+```
+
+```css
+.ct-target-line {
+    stroke: blue;
+    stroke-width: 2px;
+    stroke-dasharray: 4px;
+    shape-rendering: crispEdges;
+}
 ```
