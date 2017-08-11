@@ -7,6 +7,10 @@ Grab the source or download from npm:
 
 `npm install chartist-plugin-targetline`
 
+or bower:
+
+`bower install chartist-plugin-targetline`
+
 ## Available options and their defaults
 
 ```javascript
