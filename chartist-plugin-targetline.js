@@ -18,25 +18,20 @@
     options = Chartist.extend({}, defaultOptions, options);
 
     return function ctTargetLine(chart) {
-      switch (chart.constructor.name) {
-        case 'Line':
-				case 'Bar':
-
         function projectY(chartRect, bounds, value) {
 					return chartRect.y1 - (chartRect.height() / bounds.max * value)
 				}
 
-					chart.on('created', function (context) {
-						var targetLineY = projectY(context.chartRect, context.bounds, context.options.targetLine.value);
+        chart.on('created', function (context) {
+          var targetLineY = projectY(context.chartRect, context.bounds, options.value);
 
-						context.svg.elem('line', {
-							x1: context.chartRect.x1,
-							x2: context.chartRect.x2,
-							y1: targetLineY,
-							y2: targetLineY
-						}, context.options.targetLine.class);
-					});
-      }
+          context.svg.elem('line', {
+            x1: context.chartRect.x1,
+            x2: context.chartRect.x2,
+            y1: targetLineY,
+            y2: targetLineY
+          }, options.class);
+        });
     };
   };
 }(window, document, Chartist));
