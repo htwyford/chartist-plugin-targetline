@@ -1,7 +1,8 @@
 /**
  * Chartist.js plugin to display a target line on a chart.
  * With code from @gionkunz in https://github.com/gionkunz/chartist-js/issues/235
-	* and @OscarGodson in https://github.com/gionkunz/chartist-js/issues/491
+ * and @OscarGodson in https://github.com/gionkunz/chartist-js/issues/491.
+ * Based on https://github.com/gionkunz/chartist-plugin-pointlabels
  */
 /* global Chartist */
 (function(window, document, Chartist) {
