@@ -3,7 +3,7 @@
 A plugin for Chartist.js that allows the drawing of a target line on a chart.
 
 ## Download 
-Grab the source or download from npm:
+Download from npm:
 
 `npm install chartist-plugin-targetline`
 
