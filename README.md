@@ -1,6 +1,6 @@
 # Target Line plugin for Chartist.js
 
-A plugin for Chartist.js that allows the drawing of a target line on a chart.
+A plugin for [Chartist.js](https://github.com/gionkunz/chartist-js) that allows the drawing of a target line on a chart.
 
 ## Download 
 Download from npm:
