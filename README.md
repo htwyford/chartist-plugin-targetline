@@ -31,7 +31,7 @@ var chart = new Chartist.Line('.ct-chart', {
   ]
 }, {
   plugins: [
-    ctTargetLine({
+    Chartist.plugins.ctTargetLine({
       value: 1000
     })
   ]
