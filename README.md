@@ -21,6 +21,7 @@ var defaultOptions = {
 ```
 
 ## Sample usage in Chartist.js
+## if horizontalBars is true the goalLine is draw verticaly
 
 ```javascript
 var chart = new Chartist.Line('.ct-chart', {

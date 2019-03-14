@@ -18,6 +18,9 @@
   ],
   "author": "Harry Twyford",
   "license": "ISC",
+  "devDependencies": {
+    "chartist": "~0.7.3"
+  },
   "bugs": {
     "url": "https://github.com/htwyford/chartist-plugin-targetline/issues"
   },
